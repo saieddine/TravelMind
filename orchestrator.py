@@ -7,6 +7,12 @@ class TravelMindOrchestrator:
     def __init__(self):
         self.destination_agent = DestinationAgent()
 
+    def collect_agent_results(self, trip, *, interpreted_intent=None, scenario=None):
+        """Collect richer candidates/context without changing the legacy Chengdu planner."""
+        from integration.coordinator_adapter import collect_agent_results
+        return collect_agent_results(trip, destination_agent=self.destination_agent,
+                                     interpreted_intent=interpreted_intent, scenario=scenario)
+
     def plan_trip(self, trip):
         selected_attractions = self.destination_agent.run(
             destination=trip.destination,

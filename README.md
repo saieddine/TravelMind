@@ -67,3 +67,8 @@ This is a first runnable vertical slice, not a production travel service. Destin
 
 ## Next development rule
 Keep a working main branch. Each person works on a separate branch and opens a pull request. Agree on request/response schemas before parallel work.
+
+
+## Sasha: Destination, Context and provider components
+
+The existing Chengdu API/planner remains available. Richer attraction candidates, weather context, guarded OpenRouter intent extraction and provider adapters are documented in [Sasha integration guide](docs/SASHA_INTEGRATION.md). Run `python -B -m scripts.test_offline` from the repository root for all current team tests and Sasha's offline regressions. Use `DestinationAgent.run_candidates(...)` for the richer contract or `TravelMindOrchestrator.collect_agent_results(trip)` for additive offline collection. No live calls occur by default. The richer path is not yet wired into the existing HTTP itinerary endpoint.

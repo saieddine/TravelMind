@@ -1,0 +1,53 @@
+{
+  "branch": "feature/sasha-destination-context",
+  "base_commit": "88fbd90e46173a50b37bed0191f0b6474eefe696",
+  "source_module_mapping": {
+    "travelmind.config": "providers.config",
+    "travelmind.agents.context_agent": "agents.context_agent",
+    "travelmind.agents.destination_agent": "agents.destination_agent",
+    "travelmind.data.dataset": "data.dataset",
+    "travelmind.data.enrichment": "data.enrichment",
+    "travelmind.data.poi_quality": "data.poi_quality",
+    "travelmind.data.provider_router": "data.provider_router",
+    "travelmind.integration.candidate_handoff": "integration.candidate_handoff",
+    "travelmind.integration.contract_validation": "integration.contract_validation",
+    "travelmind.integration.team_handoff": "integration.team_handoff",
+    "travelmind.llm.intent_interpreter": "llm.intent_interpreter",
+    "travelmind.llm.openrouter_client": "llm.openrouter_client",
+    "travelmind.workflows.enrichment": "workflows.enrichment",
+    "travelmind.workflows.official_verification": "workflows.official_verification",
+    "travelmind.providers.amap.client": "providers.amap.client",
+    "travelmind.providers.amap.poi_v5": "providers.amap.poi_v5",
+    "travelmind.providers.amap.weather": "providers.amap.weather",
+    "travelmind.providers.baidu.places": "providers.baidu.places",
+    "travelmind.providers.inventory.gateway": "providers.inventory.gateway",
+    "travelmind.providers.inventory.sandbox": "providers.inventory.sandbox",
+    "travelmind.providers.official_sources.client": "providers.official_sources.client",
+    "travelmind.providers.official_sources.extract": "providers.official_sources.extract",
+    "travelmind.providers.routing.amap": "providers.routing.amap",
+    "travelmind.providers.weather.context": "providers.weather.context",
+    "travelmind.providers.weather.open_meteo": "providers.weather.open_meteo",
+    "travelmind.providers.wikimedia.content": "providers.wikimedia.content",
+    "travelmind.cli.llm": "scripts.llm",
+    "travelmind.cli.demo": "scripts.demo",
+    "travelmind.cli.routes": "workflows.routes"
+  },
+  "modified_existing": [
+    "agents/destination_agent.py",
+    "orchestrator.py",
+    "README.md",
+    "requirements.txt",
+    "backend/requirements.txt",
+    ".gitignore",
+    "test_itinerary.py"
+  ],
+  "unchanged_authoritative": [
+    "models.py",
+    "itinerary.py",
+    "main.py",
+    "data/attractions.py",
+    "test_destination_agent.py",
+    "test_itinerary.py"
+  ],
+  "test_fix": "Five pre-existing calls now use their existing generate_for_test helper; assertions and production itinerary code unchanged."
+}

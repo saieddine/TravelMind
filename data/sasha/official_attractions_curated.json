@@ -1,0 +1,66 @@
+[
+  {
+    "attraction_id": "demo_xian_001",
+    "name_zh": "秦始皇帝陵博物院",
+    "city_zh": "西安市",
+    "verified_fields": {
+      "address_zh": "陕西省西安市临潼区秦陵北路",
+      "opening_hours": "Ticket admission: Mar 16–Nov 15, 08:30–17:00; Nov 16–Mar 15, 08:30–16:30. Holiday arrangements may differ.",
+      "ticket_price_cny": 120
+    },
+    "field_notes": {
+      "address_zh": "Address stated on the museum's official guide; verify the entrance when navigating.",
+      "opening_hours": "Times are ticket-inspection/admission hours, NOT closing times. Official guide lists different closing times.",
+      "ticket_price_cny": "Regular adult admission. Official ticketing page lists 60 CNY for eligible students; actual tickets and availability must be confirmed."
+    },
+    "sources": [
+      {
+        "provider": "official_attraction_website",
+        "publisher": "秦始皇帝陵博物院",
+        "url": "https://www.bmy.com.cn/guide/",
+        "checked_at": "2026-11-03",
+        "supports": ["address_zh", "opening_hours"]
+      },
+      {
+        "provider": "official_attraction_website",
+        "publisher": "秦始皇帝陵博物院",
+        "url": "https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html",
+        "checked_at": "2026-11-03",
+        "supports": ["ticket_price_cny"]
+      }
+    ]
+  },
+  {
+    "attraction_id": "demo_xian_002",
+    "name_zh": "陕西历史博物馆",
+    "city_zh": "西安市",
+    "verified_fields": {
+      "address_zh": "陕西省西安市雁塔区小寨东路91号",
+      "opening_hours": "2026 Mar 15–Nov 14: 08:30–19:00 (last ticket inspection 18:00). Other dates and holidays: check the latest official notice.",
+      "ticket_price_cny": 0
+    },
+    "field_notes": {
+      "opening_hours": "Specific 2026 extended-hours announcement; NOT a year-round timetable.",
+      "ticket_price_cny": "General admission ticket is free but reservations apply; paid exhibitions have separate charges. This is NOT a booking/availability confirmation."
+    },
+    "field_valid_through": {
+      "opening_hours": "2026-11-14"
+    },
+    "sources": [
+      {
+        "provider": "official_attraction_website",
+        "publisher": "陕西历史博物馆",
+        "url": "https://www.sxhm.com/guide.html",
+        "checked_at": "2026-11-03",
+        "supports": ["address_zh", "ticket_price_cny"]
+      },
+      {
+        "provider": "official_attraction_website",
+        "publisher": "陕西历史博物馆",
+        "url": "https://www.sxhm.com/info/announcement/detail/18621.html",
+        "checked_at": "2026-11-03",
+        "supports": ["opening_hours"]
+      }
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "source_id": "bmy-guide",
+    "attraction_name_zh": "秦始皇帝陵博物院",
+    "city_zh": "西安市",
+    "publisher": "秦始皇帝陵博物院",
+    "url": "https://www.bmy.com.cn/guide/",
+    "parser": "bmy_guide_seasonal_hours",
+    "supported_fields": ["opening_hours"]
+  },
+  {
+    "source_id": "bmy-tickets",
+    "attraction_name_zh": "秦始皇帝陵博物院",
+    "city_zh": "西安市",
+    "publisher": "秦始皇帝陵博物院",
+    "url": "https://www.bmy.com.cn/jingtai/bmyweb/ticketing.html",
+    "parser": "bmy_tickets_adult",
+    "supported_fields": ["ticket_price_cny", "booking_required"]
+  },
+  {
+    "source_id": "sxhm-extended-2026",
+    "attraction_name_zh": "陕西历史博物馆",
+    "city_zh": "西安市",
+    "publisher": "陕西历史博物馆",
+    "url": "https://www.sxhm.com/guide/visit/detail/18620.html",
+    "parser": "sxhm_2026_hours",
+    "supported_fields": ["opening_hours"]
+  }
+]

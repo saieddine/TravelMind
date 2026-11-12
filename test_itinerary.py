@@ -23,7 +23,7 @@ def generate_for_test(trip):
     return generate_itinerary(trip, selected)
 
 def test_budget_calculation_is_consistent():
-    result = generate_itinerary(make_trip())
+    result = generate_for_test(make_trip())
 
     budget = result["budget"]
 
@@ -44,7 +44,7 @@ def test_budget_calculation_is_consistent():
 
 
 def test_unsupported_destination_is_reported():
-    result = generate_itinerary(
+    result = generate_for_test(
         make_trip(destination="Beijing")
     )
 
@@ -53,7 +53,7 @@ def test_unsupported_destination_is_reported():
 
 
 def test_itinerary_contains_requested_number_of_days():
-    result = generate_itinerary(make_trip(days=3))
+    result = generate_for_test(make_trip(days=3))
 
     assert result["status"] == "success"
     assert len(result["itinerary"]) == 3
@@ -61,7 +61,7 @@ def test_itinerary_contains_requested_number_of_days():
 
 
 def test_daily_activity_hours_never_exceed_limit():
-    result = generate_itinerary(
+    result = generate_for_test(
         make_trip(days=1, interests=["nature"])
     )
 
@@ -70,7 +70,7 @@ def test_daily_activity_hours_never_exceed_limit():
 
 
 def test_unassigned_attractions_are_reported():
-    result = generate_itinerary(
+    result = generate_for_test(
         make_trip(days=1, interests=["nature"])
     )
 

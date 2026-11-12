@@ -1,0 +1,63 @@
+{
+  "branch": "feature/sasha-destination-context",
+  "base_commit": "88fbd90e46173a50b37bed0191f0b6474eefe696",
+  "tests_run": 217,
+  "passed": 217,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "baseline_team_tests": {
+    "passed": 4,
+    "errors": 5,
+    "cause": "Existing tests omitted selected_attractions; fixed by calling their existing helper"
+  },
+  "nirmin_reference_commit": "d6f3875b4f1eec40b62dff2a1e9022006451503a",
+  "nirmin_reference_model": "AttractionInput from local Git object, not copied into runtime",
+  "nirmin_candidate_records_validated": 2,
+  "missing_english_name_rejected": true,
+  "application_modules_imported": 46,
+  "offline_demo_usage": {
+    "amap_requests_attempted": 0,
+    "llm_requests_attempted": 0,
+    "llm_tokens": 0
+  },
+  "api_startup": "not run: FastAPI and uvicorn are not installed in this interpreter; existing requirements retained",
+  "external_api_calls": 0,
+  "llm_tokens": 0,
+  "secrets_pattern_findings": [],
+  "large_files_over_1MB": [],
+  "new_file_whitespace_findings": [],
+  "conflict_markers": [],
+  "protected_files_unchanged": [
+    "models.py",
+    "itinerary.py",
+    "main.py",
+    "data/attractions.py",
+    "agents/__init__.py",
+    "data/__init__.py",
+    "test_destination_agent.py"
+  ],
+  "staged_files": [],
+  "conflicts": [],
+  "validation_gap_fixes": {
+    "original_tests_preserved": 201,
+    "new_regression_methods": 16,
+    "clarification_demo": {
+      "code": "clarification_required",
+      "field": "city",
+      "places": [],
+      "amap_api_requests_attempted": 0,
+      "local_retrieval_calls": 0,
+      "amap_retrieval_calls": 0
+    },
+    "malformed_coordinator_error_codes": [
+      "invalid_intent",
+      "invalid_intent"
+    ],
+    "offline_destination_candidates": 2,
+    "offline_coordinator_candidates": 2,
+    "legacy_chengdu_candidates": 2,
+    "chengdu_ai_search": "Verified using synthetic offline retrieval fixture; richer authored seed remains Xi-an-focused",
+    "exceptions": "IntentValidationError and ClarificationRequired both extend ValueError"
+  }
+}
